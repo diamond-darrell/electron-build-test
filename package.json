@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/diamond-darrell/electron-build-tes",
+  "repository": "https://github.com/diamond-darrell/electron-build-test",
   "keywords": [
     "Electron",
     "quick",
