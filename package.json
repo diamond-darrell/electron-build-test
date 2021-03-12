@@ -31,7 +31,7 @@
       "name": "Test for Desktop",
       "schemes": [
         "test"
-      ]
+      ],
     },
     "mac": {
       "category": "public.app-category.Reference",

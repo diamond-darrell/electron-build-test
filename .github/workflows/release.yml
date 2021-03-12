@@ -26,18 +26,11 @@ jobs:
             [
               '+([0-9])?(.{+([0-9]),x}).x',
               'main',
-              'next',
-              {
-                name: 'beta',
-                prerelease: true
-              },
-              {
-                name: 'alpha',
-                prerelease: true
-              }
+              'next'
             ]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Build/release Electron app
         uses: samuelmeuli/action-electron-builder@v1
@@ -45,7 +38,7 @@ jobs:
           build_script_name: "build:electron"
           # GitHub token, automatically provided to the action
           # (No need to define this secret in the repo settings)
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
           # If the commit is tagged with a version (e.g. "v1.0.0"),
           # release the app after building
