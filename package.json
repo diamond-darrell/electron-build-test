@@ -1,6 +1,6 @@
 {
   "name": "electron-quick-start",
-  "private": "true",
+  "private": true,
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
