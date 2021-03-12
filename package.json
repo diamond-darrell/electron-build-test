@@ -14,9 +14,28 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Stas",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^12.0.0"
+    "electron": "^12.0.0",
+    "electron-builder": "^22.10.5"
+  },
+  "build": {
+    "appId": "com.stas.electron-test",
+    "productName": "Test for Desktop",
+    "copyright": "Copyright © 2021 ${author}",
+    "protocols": {
+      "name": "Test for Desktop",
+      "schemes": [
+        "test"
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.Reference",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    }
   }
 }
